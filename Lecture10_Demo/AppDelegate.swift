@@ -8,13 +8,33 @@
 
 import UIKit
 
+class CarObject{
+    var carReg:String?
+    var oilType:String?
+    var oilQuant:Double?
+    var fuelType:String?
+    var coolantQuant:Double?
+    
+    init(carReg:String, oilType:String, oilQuant:Double, fuelType:String, coolant:Double){
+        
+        self.carReg = carReg
+        self.oilType = oilType
+        self.oilQuant = oilQuant
+        self.fuelType = fuelType
+        self.coolantQuant = coolant
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var cars:[CarObject] = []
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        cars.append(CarObject(carReg:"00-C-12345", oilType:"10W/50", oilQuant:3.0, fuelType:"Petrol", coolant: 3.0))
+        
+        
         return true
     }
 
