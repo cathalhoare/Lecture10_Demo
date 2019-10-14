@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         cars.append(CarObject(carReg:"00-C-12345", oilType:"10W/50", oilQuant:3.0, fuelType:"Petrol", coolant: 3.0))
+        cars.append(CarObject(carReg:"00-C-12345", oilType:"10W/50", oilQuant:3.0, fuelType:"Petrol", coolant: 3.0))
         
         
         return true

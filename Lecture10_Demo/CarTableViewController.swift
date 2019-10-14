@@ -19,6 +19,8 @@ class carTableCell:UITableViewCell{
 
 class CarTableViewController: UITableViewController {
 
+    var cars:[CarObject] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +30,13 @@ class CarTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    override func viewWillAppear(_ animated: Bool){
+        super.viewWillAppear(animated)
+        
+    }
+    
+    @IBAction func dismissAddNew(segue:UIStoryboardSegue){}
 
     // MARK: - Table view data source
 
@@ -44,7 +53,6 @@ class CarTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "carcell", for: indexPath) as! carTableCell
 
-        
 
         return cell
     }
@@ -57,17 +65,17 @@ class CarTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
+            
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            
+            
+        }
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.

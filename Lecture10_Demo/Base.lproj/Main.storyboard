@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hps-LW-3RT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Car Table View Controller-->
+        <!--My Cars-->
         <scene sceneID="CBD-hl-GnA">
             <objects>
                 <tableViewController id="hps-LW-3RT" customClass="CarTableViewController" customModule="Lecture10_Demo" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,10 +94,13 @@
                             <outlet property="delegate" destination="hps-LW-3RT" id="yY5-Ad-fJT"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="My Cars" id="Pct-3z-1dO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hhf-Cd-4fS"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Tr-BH-nXK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.507246376811594" y="-11.383928571428571"/>
+            <point key="canvasLocation" x="995.65217391304361" y="-11.383928571428571"/>
         </scene>
     </scenes>
 </document>
